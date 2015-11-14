@@ -8,16 +8,49 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <g:render template="/layouts/head"></g:render>
     <title>Dashboard</title>
 </head>
 
 <body>
-LOGGATO!!
+<g:render template="/layouts/navbar"></g:render>
 
+<div class="col-md-8">
+    <h3>All contacts </h3>
+    <hr>
+    <div class="col-md-4 card">sss</div>
+    <div class="col-md-4 card">sss</div>
+    <div class="col-md-4 card">sss</div>
+</div>
+<div class="col-md-4">
+    <div class="col-md-12 preferiti">
+        <h3>Preferiti </h3>
+        <div class="col-md-12">
+            <div class="col-md-3 foto"></div>
+            <div class="col-md-9 user">
+                <span id="nome">Super Trevor</span>
+                <br>
+                <span id="ruolo">Head of Businesssss / WearApp</span>
+                <br>
+                <a>quick view</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 nuovi">
+        <h3>Nuovi </h3>
+        <div class="col-md-12">
+            <div class="col-md-3 foto"></div>
+            <div class="col-md-9 user">
+                <span id="nome">Super Trevor</span>
+                <br>
+                <span id="ruolo">Head of Businesssss / WearApp</span>
+                <br>
+                <a>quick view</a>
+            </div>
+        </div>
+    </div>
 
-<g:link controller="logout" action="logout">Logout</g:link> <br/>
-
-<g:link controller="card" action="index">Inserisci La tua card</g:link>
+</div>
 
 
 </body>

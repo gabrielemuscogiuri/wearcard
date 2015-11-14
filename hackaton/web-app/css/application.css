@@ -1,0 +1,27 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.card {
+    border: 1px solid;
+    height: 400px;
+}
+
+.preferiti,
+.nuovi{
+    min-height: 300px;
+}
+
+.preferiti .foto,
+.nuovi .foto {
+    border: 1px solid;
+    height: 77px;
+    weight: 77px;
+}
+
+.preferiti .user > #nome{
+    font-weight: bold;
+}

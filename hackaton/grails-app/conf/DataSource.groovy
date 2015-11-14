@@ -19,7 +19,7 @@ environments {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost:3306/wearcard?autoReconnect=true"
             username = "root"
-            password = "password"
+            password = ""
         }
     }
     test {
