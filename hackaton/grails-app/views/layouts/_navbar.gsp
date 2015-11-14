@@ -19,7 +19,11 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nome username <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        Nome username
+                    </a>
+                    <div id="foto-profilo"></div>
                     <ul class="dropdown-menu">
                         <li><g:link controller="card" action="index">Settings</g:link></li>
                         <li><g:link controller="logout" action="logout">Logout</g:link></li>
