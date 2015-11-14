@@ -1,7 +1,5 @@
 package hackaton
 
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException
-
 class RegisterController {
 
 

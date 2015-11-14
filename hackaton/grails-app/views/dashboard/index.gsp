@@ -15,6 +15,10 @@
 LOGGATO!!
 
 
-<g:link controller="logout" action="logout">Logout</g:link>
+<g:link controller="logout" action="logout">Logout</g:link> <br/>
+
+<g:link controller="card" action="index">Inserisci La tua card</g:link>
+
+
 </body>
 </html>
