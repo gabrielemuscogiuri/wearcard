@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244b0a0d-5232-4f84-ac20-6a3b5ba5f539" name="Default" comment="aggiunti i campi della foto in lista contatti">
+    <list default="true" id="244b0a0d-5232-4f84-ac20-6a3b5ba5f539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/nav.css" afterPath="$PROJECT_DIR$/web-app/css/nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/_head.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/_head.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/application.css" afterPath="$PROJECT_DIR$/web-app/css/application.css" />
     </list>
     <ignored path="hackaton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/css/nav.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39823008">
+            <state vertical-scroll-proportion="-11.25">
               <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
@@ -64,18 +65,18 @@
       <file leaf-file-name="_head.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/_head.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.088495575">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -114,12 +115,12 @@
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/head.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/_navbar.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/_head.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/card.css" />
         <option value="$PROJECT_DIR$/grails-app/views/card/index.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/application.css" />
         <option value="$PROJECT_DIR$/grails-app/views/dashboard/index.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/nav.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/_head.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/application.css" />
       </list>
     </option>
   </component>
@@ -697,7 +698,7 @@
       <created>1447534056455</created>
       <option name="number" value="Default" />
       <updated>1447534056455</updated>
-      <workItem from="1447534057907" duration="4216000" />
+      <workItem from="1447534057907" duration="4345000" />
     </task>
     <task id="LOCAL-00001" summary="implementazione dello scheletro dei contatti">
       <created>1447536637378</created>
@@ -723,11 +724,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447538768831</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="migliorie nello stile (a tag) della nav">
+      <created>1447539514206</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1447539514206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4216000" />
+    <option name="totallyTimeSpent" value="4345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -773,7 +780,8 @@
     <MESSAGE value="implementazione dello scheletro dei contatti" />
     <MESSAGE value="creata la scheda dell'utente (loggato);&#10;miglioramenti (basici) del form di creazione card" />
     <MESSAGE value="aggiunti i campi della foto in lista contatti" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i campi della foto in lista contatti" />
+    <MESSAGE value="migliorie nello stile (a tag) della nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="migliorie nello stile (a tag) della nav" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -855,22 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/_head.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/dashboard/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8297873">
@@ -885,8 +877,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/nav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39823008">
+        <state vertical-scroll-proportion="-11.25">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/_head.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.088495575">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
       </provider>
