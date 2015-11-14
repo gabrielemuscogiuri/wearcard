@@ -11,6 +11,7 @@ class User {
 
     static constraints =
             {
+                username unique: true
                 password(blank:false, password:true)
             }
 

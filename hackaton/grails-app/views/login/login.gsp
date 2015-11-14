@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <g:if test="${flash.message}">
+        <div class="box box-info">${flash.message}</div>
+    </g:if>
     <div id="login_container">
         <div id="login">
             <div id="login_user">
@@ -33,7 +36,7 @@
         </div>
         <div>
             <p>
-                Già registrato? clicca <g:link controller="register" action="register">qui</g:link>
+                Non registrato? clicca <g:link controller="register" action="register">qui</g:link>
             </p>
         </div>
     </div>
