@@ -22,6 +22,6 @@ html, body {
     weight: 77px;
 }
 
-.preferiti .user > #nome{
+.preferiti .user > .nome{
     font-weight: bold;
 }

@@ -18,9 +18,58 @@
 <div class="col-md-8">
     <h3>All contacts </h3>
     <hr>
-    <div class="col-md-4 card">sss</div>
-    <div class="col-md-4 card">sss</div>
-    <div class="col-md-4 card">sss</div>
+    <div class="col-md-4 card">
+        <span id="nome">Super Trevor</span>
+        <br>
+        <span class="ruolo">Head of Businesssss / WearApp</span>
+        <br>
+        <span class="city">Torino</span>
+        <br>
+        <span class="number">28749821374</span>
+        <br>
+        <span class="email">www@fhf.t</span>
+        <br>
+        <span class="bio">bio</span>
+        <br>
+        <span class="fb">facevvok</span>
+        <br>
+        <span class="linkedin">linkedin</span>
+        <br></div>
+    <div class="col-md-4 card">
+        <span id="nome">Super Trevor</span>
+        <br>
+        <span class="ruolo">Head of Businesssss / WearApp</span>
+        <br>
+        <span class="city">Torino</span>
+        <br>
+        <span class="number">28749821374</span>
+        <br>
+        <span class="email">www@fhf.t</span>
+        <br>
+        <span class="bio">bio</span>
+        <br>
+        <span class="fb">facevvok</span>
+        <br>
+        <span class="linkedin">linkedin</span>
+        <br></div>
+    <div class="col-md-4 card">
+        <span id="nome">Super Trevor</span>
+        <br>
+        <span class="ruolo">Head of Businesssss / WearApp</span>
+        <br>
+        <span class="city">Torino</span>
+        <br>
+        <span class="number">28749821374</span>
+        <br>
+        <span class="email">www@fhf.t</span>
+        <br>
+        <span class="bio">bio</span>
+        <br>
+        <span class="fb">facevvok</span>
+        <br>
+        <span class="linkedin">linkedin</span>
+        <br></div>
+
 </div>
 <div class="col-md-4">
     <div class="col-md-12 preferiti">
@@ -28,9 +77,9 @@
         <div class="col-md-12">
             <div class="col-md-3 foto"></div>
             <div class="col-md-9 user">
-                <span id="nome">Super Trevor</span>
+                <span class="nome">Super Trevor</span>
                 <br>
-                <span id="ruolo">Head of Businesssss / WearApp</span>
+                <span class="ruolo">Head of Businesssss / WearApp</span>
                 <br>
                 <a>quick view</a>
             </div>
