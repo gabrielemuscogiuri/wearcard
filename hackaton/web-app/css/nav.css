@@ -4,3 +4,17 @@
     border: 0;
     border-radius: 0;
 }
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-image: none;
+    background-color: #E63A4A;
+    color: white;
+}
