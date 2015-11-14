@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="244b0a0d-5232-4f84-ac20-6a3b5ba5f539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/dashboard/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/dashboard/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/application.css" afterPath="$PROJECT_DIR$/web-app/css/application.css" />
     </list>
     <ignored path="hackaton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -698,7 +696,7 @@
       <created>1447534056455</created>
       <option name="number" value="Default" />
       <updated>1447534056455</updated>
-      <workItem from="1447534057907" duration="3757000" />
+      <workItem from="1447534057907" duration="3776000" />
     </task>
     <task id="LOCAL-00001" summary="implementazione dello scheletro dei contatti">
       <created>1447536637378</created>
@@ -712,11 +710,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447537988085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aggiunti i campi della foto in lista contatti">
+      <created>1447538757211</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1447538757211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3757000" />
+    <option name="totallyTimeSpent" value="3776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -761,7 +765,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementazione dello scheletro dei contatti" />
     <MESSAGE value="creata la scheda dell'utente (loggato);&#10;miglioramenti (basici) del form di creazione card" />
-    <option name="LAST_COMMIT_MESSAGE" value="creata la scheda dell'utente (loggato);&#10;miglioramenti (basici) del form di creazione card" />
+    <MESSAGE value="aggiunti i campi della foto in lista contatti" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i campi della foto in lista contatti" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
