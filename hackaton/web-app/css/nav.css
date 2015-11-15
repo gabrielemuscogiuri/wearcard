@@ -39,7 +39,7 @@
 }
 
 .navbar-nav>li>.dropdown-menu{
-    left: 0;
+    left: -40px;
 }
 
 .navbar-nav .form-control{
