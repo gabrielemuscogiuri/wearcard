@@ -8,37 +8,33 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <g:render template="/layouts/head"></g:render>
     <title>Login</title>
 </head>
 
 <body>
-    <g:if test="${flash.message}">
-        <div class="box box-info">${flash.message}</div>
-    </g:if>
-    <div id="login_container">
-        <div id="login">
-            <div id="login_user">
-                <g:form action="doLogin" >
-                    <p>
-                        <label for="username" class="label">${message(code: 'login.username.label', default: 'Username')}</label>
-                        <g:textField name="username" />
-                    </p>
-                    <p>
-                        <label for='password' class="label">${message(code: 'login.password.label', default: 'Password')}</label>
-                        <g:passwordField name="password" />
-                    </p>
 
-                    <div class="ctaLogin">
-                        <g:submitButton name="submit" class="btn-green btn big" value="Entra" />
-                    </div>
-                </g:form>
+<div class="col-md-12 login-container">
+    <div class="logo">
+        <img src="images/logo_white.png"><br>
+    </div>
+    <div class="user">
+
+        <g:form action="doLogin" class="text-center" >
+            <h3>Login</h3>
+            <div class="form-group">
+                <g:textField name="username"  type="text" class="form-control" id="" placeholder="Username" />
             </div>
-        </div>
-        <div>
-            <p>
-                Non registrato? clicca <g:link controller="register" action="register">qui</g:link>
-            </p>
-        </div>
+            <div class="form-group">
+                <g:textField name="password"  type="password" class="form-control" id="" placeholder="Password" />
+            </div>
+
+            <g:submitButton name="submit" value="Entra" class="btn btn-primary"/>
+
+        </g:form>
+        <g:link class="col-md-12 text-center" controller="register" action="register">Questa notte non hai dormito? Clicca qui</g:link>
+
+    </div>
     </div>
 </body>
 </html>

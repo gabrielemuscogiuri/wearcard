@@ -28,10 +28,44 @@
 
 .navbar-brand img {
     margin-top: -20px;
+    width: 250px;
 }
 .navbar-right {
     font-size: 20px;
 }
+
+.navbar-right form {
+    padding-right: 100px;
+}
+
 .navbar-nav>li>.dropdown-menu{
     left: 0;
+}
+
+.navbar-nav .form-control{
+    background-color: #F34152;
+    border-radius: 0;
+    border: 0;
+    height: 40px;
+    border-bottom: 1px solid white;
+    width: 400px !important;
+    color: white;
+}
+.fa-search{
+    color: white;
+    margin-left: -40px;
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+.form-control:-ms-input-placeholder {
+    color: white;
 }

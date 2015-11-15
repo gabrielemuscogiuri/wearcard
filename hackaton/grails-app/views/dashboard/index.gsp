@@ -54,14 +54,14 @@
                     <br>
                     <i class="fa fa-linkedin"></i>
                     <label>Linkedin: </label>
-                    <span class="linkedin">${handshake.card.linkedinUrl}</span>
+                    <span class="linkedin">${handshake.card.linkedin}</span>
                 </div>
             </div>
         </div>
     </g:each>
 
-    <div class="col-md-12">
-        <a class="btn btn-default" id="showall">Mostra tutto</a>
+    <div class="col-md-12 text-center">
+        <div class="" id="showall">Mostra tutto</div>
     </div>
 
 </div>
@@ -71,6 +71,7 @@
     <g:if test="${handshake.favourite && i < 4}">
         <div class="col-md-12 preferiti">
             <h3>Preferiti </h3>
+            <hr>
             <div class="col-md-12">
                 <div class="col-md-3 foto"></div>
                 <div class="col-md-9 user">
@@ -88,6 +89,7 @@
 <g:each in="${lastHandshakes}" var="handshake">
     <div class="col-md-12 nuovi">
         <h3>Nuovi </h3>
+        <hr>
         <div class="col-md-12">
             <div class="col-md-3 foto"></div>
             <div class="col-md-9 user">

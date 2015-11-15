@@ -35,14 +35,24 @@ label {
 .nuovi{
     min-height: 300px;
 }
+.preferiti div:nth-child(1),
+.nuovi div:nth-child(1){
+   padding: 0;
+}
 
 .preferiti .foto,
 .nuovi .foto {
     border: 1px solid;
     height: 77px;
-    weight: 77px;
+    width: 77px;
 }
-
+.nuovi .user .nome{
+    font-size: 20px;
+    font-weight: 400;
+}
+.nuovi .user{
+    padding-top: 5px;
+}
 .preferiti .user > .nome{
     font-weight: bold;
 }
@@ -111,4 +121,16 @@ label {
 @keyframes slideUp_effect {
     0%   { top: 250px; }
     100% { top:-100px; }
+}
+
+#showall {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 25px;
+    background-color: white;
+}
+#showall:hover{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.35s box-shadow;
 }
