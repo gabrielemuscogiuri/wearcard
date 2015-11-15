@@ -8,9 +8,10 @@ class LoginController {
 
     def doLogin = {
         def user = User.findByUsernameAndPassword(params.username, params.password)
-        session.user = user
-        if (user)
-            redirect(controller:'dashboard',action:'index')
+        if (user) {
+            session.user = user
+            redirect(controller: 'dashboard', action: 'index')
+        }
         else
             redirect(action:'login')
     }

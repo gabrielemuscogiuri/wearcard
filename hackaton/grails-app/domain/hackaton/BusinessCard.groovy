@@ -5,15 +5,14 @@ class BusinessCard {
     String name
     String surname
     String email
+    String company
+    String role
     String image
     String phoneNumber
     String address
-    User owner
-    Boolean favourite = false
     Date timestamp
     String bio
-
-    static hasMany = [social : Social]
+    String linkedin
 
     static constraints =
             {
@@ -21,12 +20,14 @@ class BusinessCard {
                 name nullable: true
                 surname nullable: true
                 email nullable: true
+                company nullable: true
+                role nullable: true
                 image nullable: true
                 phoneNumber nullable: true
                 address nullable: true
-                owner nullable: true
-                favourite nullable: true
                 timestamp nullable: true
                 bio nullable: true
+                linkedin nullable: true
             }
 }
+

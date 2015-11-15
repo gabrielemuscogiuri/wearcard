@@ -8,16 +8,99 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <g:render template="/layouts/head"></g:render>
     <title>Dashboard</title>
 </head>
 
 <body>
-LOGGATO!!
+<g:render template="/layouts/navbar"></g:render>
 
+<div class="col-md-8">
+    <h3>All contacts </h3>
+    <hr>
+    <g:each in="${handshakes}" var="handshake">
+        <div class="col-md-4 card">
+            <div class="bottom">
+                <div class="col-md-10">
+                    <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
+                    <br>
+                    <span class="ruolo">${handshake.card.role}<br> @ ${handshake.card.company}</span>
+                </div>
+                <div class="col-md-2 ">
+                    <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="More info"></span>
+                </div>
+            </div>
+            <div class="bottom-hover">
+                <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
+                <br>
+                <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
+                <hr>
+                <div class="hover-info">
+                    <i class="fa fa-globe"></i>
+                    <label>City: </label>
+                    <span class="city">${handshake.card.address}</span>
+                    <br>
+                    <i class="fa fa-phone"></i>
+                    <label>Number: </label>
+                    <span class="number">${handshake.card.phoneNumber}</span>
+                    <br>
+                    <i class="fa fa-envelope-o"></i>
+                    <label>Email: </label>
+                    <span class="email">${handshake.card.email}</span>
+                    <br>
+                    <i class="fa fa-user"></i>
+                    <label>Bio: </label>
+                    <span class="bio">${handshake.card.bio}</span>
+                    <br>
+                    <i class="fa fa-linkedin"></i>
+                    <label>Linkedin: </label>
+                    <span class="linkedin">${handshake.card.linkedinUrl}</span>
+                </div>
+            </div>
+        </div>
+    </g:each>
 
-<g:link controller="logout" action="logout">Logout</g:link> <br/>
+    <div class="col-md-12">
+        <a class="btn btn-default" id="showall">Mostra tutto</a>
+    </div>
 
-<g:link controller="card" action="index">Inserisci La tua card</g:link>
+</div>
+<div class="col-md-4">
+
+<g:each in="${handshakes}" var="handshake" status="i">
+    <g:if test="${handshake.favourite && i < 4}">
+        <div class="col-md-12 preferiti">
+            <h3>Preferiti </h3>
+            <div class="col-md-12">
+                <div class="col-md-3 foto"></div>
+                <div class="col-md-9 user">
+                    <span class="nome">${handshake.card.name}</span>
+                    <br>
+                    <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
+                    <br>
+                    <a>quick view</a>
+                </div>
+            </div>
+        </div>
+    </g:if>
+</g:each>
+
+<g:each in="${lastHandshakes}" var="handshake">
+    <div class="col-md-12 nuovi">
+        <h3>Nuovi </h3>
+        <div class="col-md-12">
+            <div class="col-md-3 foto"></div>
+            <div class="col-md-9 user">
+                <span class="nome">${handshake.card.name}</span>
+                <br>
+                <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
+                <br>
+                <a>quick view</a>
+            </div>
+        </div>
+    </div>
+</g:each>
+</div>
 
 
 </body>

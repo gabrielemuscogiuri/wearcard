@@ -4,7 +4,7 @@ class LogoutController {
 
     def logout() {
 
-        session.user = null
+        session.invalidate()
 
         redirect(controller: "login", action: "login")
 

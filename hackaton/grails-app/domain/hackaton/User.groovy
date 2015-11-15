@@ -6,13 +6,13 @@ class User {
 
     String username
     String password
-
-    static hasMany = [businessCards : BusinessCard]
+    BusinessCard userCard
 
     static constraints =
             {
                 username unique: true
                 password(blank:false, password:true)
+                userCard nullable: true
             }
 
 }
