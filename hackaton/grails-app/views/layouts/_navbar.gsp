@@ -1,3 +1,4 @@
+<%@ page import="hackaton.User" %>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -8,9 +9,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <g:link controller="dashboard" action="index" class="navbar-brand" >
                 <img src="../images/logo-nav.png">
-            </a>
+            </g:link>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +32,7 @@
                         <span class="caret"></span>
                         ${session.user.username}
                     </a>
-                    <div id="foto-profilo"></div>
+                    <div id="foto-profilo" style="background: url('../images/avatar/${(hackaton.User.findById(session.user.id)).userCard?.image}');background-size: cover;"></div>
                     <ul class="dropdown-menu">
                         <li><g:link controller="card" action="index">Settings</g:link></li>
                         <li><g:link controller="logout" action="logout">Logout</g:link></li>

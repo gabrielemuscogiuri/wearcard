@@ -66,30 +66,28 @@
             </div>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 col-lg-12">
             <div class="form-group  col-md-6 col-lg-6">
                 <label for='company'>${message(code: 'login.password.label', default: 'Company')}</label>
                 <g:textField class="form-control" name="company" required="required"/>
             </div>
-
             <div class="form-group  col-md-6 col-lg-6">
                 <label for='role'>${message(code: 'login.password.label', default: 'Role')}</label>
                 <g:textField class="form-control" name="role" required="required"/>
             </div>
         </div>
 
-
-        <div class="col-md-12">
+        <div class="col-md-12 col-lg-12">
             <div class="form-group col-md-6 col-lg-6">
                 <label for='linkedin'>${message(code: 'login.password.label', default: 'Linkedin')}</label>
                 <g:textField class="form-control" name="linkedin" required="required"/>
             </div>
             <div class="form-group col-md-6 col-lg-6">
-                <label for="image"><g:message code="company.logo.label" default="Photo" />:</label>
-                <g:textField class="form-control" name="image" required="required"/>
+                <label for="imageToProcess"><g:message code="company.logo.label" default="Photo" />:</label>
+                <input type="file" class="form-control" name="imageToProcess" required="required"/>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 col-lg-12">
             <div class="form-group col-md-12 col-lg-12">
                 <label for='bio'>${message(code: 'login.password.label', default: 'Bio')}</label>
                 <g:textArea class="form-control" name="bio" required="required"/>

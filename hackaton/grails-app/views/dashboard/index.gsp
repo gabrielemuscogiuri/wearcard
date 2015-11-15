@@ -19,7 +19,7 @@
     <h3>All contacts </h3>
     <hr>
     <g:each in="${handshakes}" var="handshake">
-        <div class="col-md-4 card">
+        <div class="col-md-4 card" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover">
             <div class="bottom">
                 <div class="col-md-10">
                     <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
@@ -75,7 +75,7 @@
             <div class="col-md-12">
                 <div class="col-md-3 foto"></div>
                 <div class="col-md-9 user">
-                    <span class="nome">${handshake.card.name}</span>
+                    <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
                     <br>
                     <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
                     <br>
@@ -93,7 +93,7 @@
         <div class="col-md-12">
             <div class="col-md-3 foto"></div>
             <div class="col-md-9 user">
-                <span class="nome">${handshake.card.name}</span>
+                <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
                 <br>
                 <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
                 <br>

@@ -29,5 +29,8 @@ class BusinessCard {
                 bio nullable: true
                 linkedin nullable: true
             }
+
+
+
 }
 
