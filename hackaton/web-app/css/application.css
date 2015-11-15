@@ -27,6 +27,9 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.card .nome {
+    white-space: nowrap;
+}
 label {
     font-weight: lighter;
     font-style: italic;
