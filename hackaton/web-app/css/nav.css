@@ -1,0 +1,37 @@
+.navbar-default {
+    background-image: none;
+    background-color: #e63a4a;
+    border: 0;
+    border-radius: 0;
+    min-height:100px;
+}
+.navbar-default .container-fluid {
+    padding-top: 23px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li {
+    display: inline-flex;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-image: none;
+    background-color: #E63A4A;
+    color: white;
+}
+
+.navbar-brand img {
+    margin-top: -20px;
+}
+.navbar-right {
+    font-size: 20px;
+}
+.navbar-nav>li>.dropdown-menu{
+    left: 0;
+}
