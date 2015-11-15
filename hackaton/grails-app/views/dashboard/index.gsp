@@ -17,7 +17,7 @@
 
 <div class="col-md-8">
     <div class="col-md-12">
-        <h1>All contacts </h1>
+        <h1><i class="fa fa-link"></i> All contacts </h1>
         <hr>
     </div>
 
@@ -83,7 +83,7 @@
 <div class="col-md-4">
 
     <div class="col-md-12 preferiti">
-        <h3>Preferiti </h3>
+        <h3><i class="fa fa-star"></i> Preferiti </h3>
         <g:each in="${favouritesHandshakes}" var="handshake" status="i">
             <hr>
             <div class="col-md-12">
@@ -105,7 +105,7 @@
 
 
     <div class="col-md-12 nuovi">
-        <h3>Nuovi </h3>
+        <h3><i class="fa fa-thumbs-o-up"></i> Nuovi </h3>
         <g:each in="${lastHandshakes}" var="handshake">
             <hr>
             <div class="col-md-12">
