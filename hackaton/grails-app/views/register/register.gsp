@@ -8,31 +8,33 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>Registration</title>
+    <g:render template="/layouts/head"></g:render>
+    <title>Login</title>
 </head>
 
 <body>
 
-<div id="login_container">
-    <div id="register">
-        <div id="register_user">
-            <g:form controller="register" action="registerUser" method="post" id="loginForm">
-                <p>
-                    <label for="username" class="label">${message(code: 'login.username.label', default: 'Username')}</label>
-                    <g:textField name="username" />
-                </p>
-                <p>
-                    <label for='password' class="label">${message(code: 'login.password.label', default: 'Password')}</label>
-                    <g:passwordField name="password" />
-                </p>
+<div class="col-md-12 login-container">
+    <div class="logo">
+        <img src="../images/logo_white.png"><br>
+    </div>
+    <div class="user">
 
-                <div class="ctaLogin">
-                    <g:submitButton name="submit" class="btn-green btn big" value="Registrati" />
-                </div>
-            </g:form>
-        </div>
+        <g:form controller="register" action="registerUser" method="post" id="loginForm" class="text-center">
+            <h3>Registrazione</h3>
+            <div class="form-group">
+                <g:textField name="username" type="text" class="form-control" id="" placeholder="Username"/>
+            </div>
+            <div class="form-group">
+                <g:passwordField name="password" type="password" class="form-control" id="" placeholder="Password"/>
+            </div>
+
+            <div class="ctaLogin">
+                <g:submitButton name="submit" class="btn btn-primary" value="Registrati"></g:submitButton>
+
+            </div>
+        </g:form>
     </div>
 </div>
-
 </body>
 </html>

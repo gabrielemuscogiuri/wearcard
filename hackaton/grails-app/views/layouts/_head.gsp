@@ -33,3 +33,5 @@
 <link rel="stylesheet" type="text/css" href="../css/card.css">
 <link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/register.css">
