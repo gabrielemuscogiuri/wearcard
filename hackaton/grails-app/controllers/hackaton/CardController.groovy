@@ -31,8 +31,11 @@ class CardController {
 
     def deleteCard() {
         User loggedUser = User.findById(session.user.id)
+        BusinessCard card = loggedUser.userCard
+        card.delete()
         loggedUser.userCard = null
         loggedUser.save(failOnError: true, flush: true)
+
         redirect(action: "index")
     }
 

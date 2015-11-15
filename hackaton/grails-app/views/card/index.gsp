@@ -94,9 +94,6 @@
             </div>
         </div>
 
-
-
-
         <div class="ctaLogin">
             <g:submitButton name="submit" class="btn btn-primary" value="Create" />
         </div>

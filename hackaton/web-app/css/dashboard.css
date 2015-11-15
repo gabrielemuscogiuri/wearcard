@@ -5,7 +5,7 @@
     padding: 0;
     margin: 3px;
 
-    background-image: url('../images/pichai.jpg') !important;
+    background-image: url('../images/pichai.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
