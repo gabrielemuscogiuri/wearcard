@@ -32,9 +32,9 @@
                         <span class="caret"></span>
                         ${session.user.username}
                     </a>
-                    <div id="foto-profilo" style="background: url('../images/avatar/${(hackaton.User.findById(session.user.id)).userCard?.image}');background-size: cover;"></div>
+                    <div id="foto-profilo" style="background: url('../images/avatar/${(hackaton.User.findById(session.user.id)).userCard?.image?:'no_image.png'}');background-size: cover;"></div>
                     <ul class="dropdown-menu">
-                        <li><g:link controller="card" action="index">Settings</g:link></li>
+                        <li><g:link controller="card" action="index">My Business Card</g:link></li>
                         <li><g:link controller="logout" action="logout">Logout</g:link></li>
                     </ul>
                 </li>

@@ -67,6 +67,13 @@
         </div>
     </g:each>
 
+    <g:if test="${handshakes.isEmpty()}">
+        <p style="text-align: center;margin-top: 6em;">No Cards added yet</p>
+    </g:if>
+
+    <div class="col-md-12 text-center">
+        <g:link controller="handshake" action="index">Add HandShake</g:link>
+    </div>
 
     <div class="col-md-12 text-center">
         <div class="" id="showall">Carica altri contatti</div>
@@ -75,13 +82,12 @@
 </div>
 <div class="col-md-4">
 
-<g:each in="${handshakes}" var="handshake" status="i">
-    <g:if test="${handshake.favourite && i < 4}">
-        <div class="col-md-12 preferiti">
-            <h3>Preferiti </h3>
+    <div class="col-md-12 preferiti">
+        <h3>Preferiti </h3>
+        <g:each in="${favouritesHandshakes}" var="handshake" status="i">
             <hr>
-            <div class="col-md-12 items">
-                <div class="col-md-3 foto"></div>
+            <div class="col-md-12">
+                <div class="col-md-3 foto" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover"></div>
                 <div class="col-md-9 user">
                     <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
                     <br>
@@ -90,26 +96,34 @@
                     <a>quick view</a>
                 </div>
             </div>
-        </div>
-    </g:if>
-</g:each>
+        </g:each>
 
-<g:each in="${lastHandshakes}" var="handshake">
+        <g:if test="${favouritesHandshakes.isEmpty()}">
+            <p style="text-align: center;margin-top: 6em;">No favourites added yet</p>
+        </g:if>
+    </div>
+
+
     <div class="col-md-12 nuovi">
         <h3>Nuovi </h3>
-        <hr>
-        <div class="col-md-12 items">
-            <div class="col-md-3 foto"></div>
-            <div class="col-md-9 user">
-                <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
-                <br>
-                <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
-                <br>
-                <a>quick view</a>
+        <g:each in="${lastHandshakes}" var="handshake">
+            <hr>
+            <div class="col-md-12">
+                <div class="col-md-3 foto" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover"></div>
+                <div class="col-md-9 user">
+                    <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
+                    <br>
+                    <span class="ruolo">${handshake.card.company} / ${handshake.card.role}</span>
+                    <br>
+                    <a>quick view</a>
+                </div>
             </div>
-        </div>
+        </g:each>
+        <g:if test="${lastHandshakes.isEmpty()}">
+            <p style="text-align: center;margin-top: 6em;">No Cards added yet</p>
+        </g:if>
     </div>
-</g:each>
+
 </div>
 
 <button class="fluid-button" data-toggle="tooltip" data-placement="left" title="Lista d'attesa utenti">
@@ -119,4 +133,3 @@
 
 </body>
 </html>
-
