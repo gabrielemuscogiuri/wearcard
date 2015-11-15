@@ -16,24 +16,31 @@
 <g:render template="/layouts/navbar"></g:render>
 <g:if test="${businessCard}">
     <div class="col-md-12 card-personale">
-        <div class="col-md-12 jumbotron">
-            <div class="col-md-4">
-                Foto
-            </div>
-            <div class="col-md-8">
-                <div class="col-md-12">
-                    <span>Gabriele Muscogiuri</span>
+        <g:link action="deleteCard" >  <i class="fa fa-trash-o" data-toggle="tooltip" data-placement="left" title="Elimina biglietto da visita"></i></g:link>
+        <div class="col-md-12 box-user">
+
+            <div class="col-md-4 photo-user" style="background-image: url('${businessCard.image}')" ></div>
+            <div class="col-md-8 info-user">
+                <br class="col-md-12">
+                    <span class="name-user">${businessCard.name} ${businessCard.surname}</span>
                     <br>
-                    <span>Web Designer / Wearcard</span>
-                    <p>Bio</p>
-                    <span>email</span>
-                    <span>number</span>
-                    <span>city</span>
+                    <span class="ruolo-user">${businessCard.role} @<em>${businessCard.company} </em></span>
+                    <p class="bio-user">
+                        <hr>
+                        <p class="lead"><strong>Bio:</strong> ${businessCard.bio}</p>
+                    </p>
+                    <br><br>
+                    <span class="email-user"><i class="fa fa-envelope-o"></i>  ${businessCard.email}</span>
+                    <br><br>
+                    <span class="number-user"><i class="fa fa-phone"></i>  ${businessCard.phoneNumber}</span>
+                    <br><br>
+                    <span class="linkedin-user"><i class="fa fa-linkedin"></i>  ${businessCard.linkedin}</span>
+                    <br><br>
+                    <span class="city-user"><i class="fa fa-globe"></i>  ${businessCard.address}</span>
                 </div>
             </div>
         </div>
     </div>
-        <g:link action="deleteCard">Delete</g:link>
 </g:if>
 <g:else>
     <div class="col-md-8 col-md-offset-2 text-center">
