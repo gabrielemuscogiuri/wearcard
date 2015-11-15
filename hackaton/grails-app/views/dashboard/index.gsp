@@ -34,8 +34,8 @@
                     </div>
 
                     <div class="col-md-2 ">
-                        <g:link action="addToFavourites" params="[handshake: handshake.id]">Fav</g:link>
-                        <g:link action="deleteHandshake" params="[handshake: handshake.id]">Del</g:link>
+                        <g:link action="addToFavourites" params="[handshake: handshake.id]"><i class="fa fa-star"></i></g:link><br>
+                        <g:link action="deleteHandshake" params="[handshake: handshake.id]"><i class="fa fa-trash"></i></g:link>
                         <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="More info" onclick="slideUpHover('${i}');"></span>
                     </div>
                 </div>
