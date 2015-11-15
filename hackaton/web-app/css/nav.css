@@ -25,3 +25,10 @@
     background-color: #E63A4A;
     color: white;
 }
+
+.navbar-brand img {
+    margin-top: -20px;
+}
+.navbar-right {
+    font-size: 20px;
+}
