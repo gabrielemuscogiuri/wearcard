@@ -73,19 +73,19 @@
     <g:if test="${handshakes.isEmpty()}">
         <p style="text-align: center;margin-top: 6em;">No Cards added yet</p>
     </g:if>
-
-    <div class="col-md-12 text-center">
-        <div class="" id="showall">Carica altri contatti</div>
-    </div>
-
+    <g:else test="${handshakes.isEmpty()}">
+        <div class="col-md-12 text-center">
+            <div class="" id="showall">Carica altri contatti</div>
+        </div>
+    </g:else>
 </div>
 <div class="col-md-4">
 
     <div class="col-md-12 preferiti">
-        <h3><i class="fa fa-star"></i> Preferiti </h3>
+        <h3><i class="fa fa-star"></i> Favourites </h3>
         <g:each in="${favouritesHandshakes}" var="handshake" status="i">
             <hr>
-            <div class="col-md-12">
+            <div class="col-md-12" style="margin-bottom: 0.5em;">
                 <div class="col-md-3 foto" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover"></div>
                 <div class="col-md-9 user">
                     <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
@@ -104,10 +104,10 @@
 
 
     <div class="col-md-12 nuovi">
-        <h3><i class="fa fa-thumbs-o-up"></i> Nuovi </h3>
+        <h3><i class="fa fa-thumbs-o-up"></i> New </h3>
         <g:each in="${lastHandshakes}" var="handshake">
             <hr>
-            <div class="col-md-12">
+            <div class="col-md-12" style="margin-bottom: 0.5em;">
                 <div class="col-md-3 foto" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover"></div>
                 <div class="col-md-9 user">
                     <span class="nome">${handshake.card.name} ${handshake.card.surname}</span>
@@ -124,13 +124,11 @@
     </div>
 
 </div>
-
-<button class="fluid-button" data-toggle="tooltip" data-placement="left" title="Lista d'attesa utenti">
-    <g:link controller="handshake" action="index">
-        <i class="fa fa-plus" ></i>
-    </g:link>
-</button>
-
+<g:link controller="handshake" action="index">
+    <button class="fluid-button" data-toggle="tooltip" data-placement="left" title="Lista d'attesa utenti">
+            <i class="fa fa-plus" ></i>
+    </button>
+</g:link>
 
 
 </body>

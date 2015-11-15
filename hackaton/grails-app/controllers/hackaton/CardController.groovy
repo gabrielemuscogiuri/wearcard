@@ -32,10 +32,17 @@ class CardController {
     def deleteCard() {
         User loggedUser = User.findById(session.user.id)
         BusinessCard card = loggedUser.userCard
-        card.delete(flush: true)
         loggedUser.userCard = null
         loggedUser.save(failOnError: true, flush: true)
 
+        List<Handshake> handshakesWithThisCard = Handshake.findAllByCard(card)
+
+        if (!handshakesWithThisCard.isEmpty()) {
+                handshakesWithThisCard.each {
+                it.delete(flush: true)
+            }
+        }
+        card.delete(flush: true)
         redirect(action: "index")
     }
 
