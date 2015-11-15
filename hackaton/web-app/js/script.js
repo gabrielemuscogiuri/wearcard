@@ -3,10 +3,14 @@
  */
 
 $( document ).ready(function() {
-
-    $( ".bottom .glyphicon" ).click(function() {
-        $( ".bottom-hover").addClass('slideUp');
-        $( ".card").addClass('shadow');
+    function slideUpHover(id) {
+        $("#"+id+" .bottom-hover").addClass('slideUp');
+        console.log("#"+id);
+        $("#dashboard .card").addClass('shadow');
+    };
+    $( "#dashboard .bottom .glyphicon" ).click(function() {
+            $("#dashboard .bottom-hover").addClass('slideUp');
+            $("#dashboard .card").addClass('shadow');
     });
     $( ".bottom-hover" ).click(function() {
         $( ".bottom-hover").removeClass('slideUp');
@@ -14,6 +18,7 @@ $( document ).ready(function() {
 
     });
 });
+
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

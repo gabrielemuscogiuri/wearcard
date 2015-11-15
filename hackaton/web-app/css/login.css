@@ -1,4 +1,4 @@
-.btn-primary {
+.login-container .btn-primary {
     background-color: #94242f;
     background-image: none;
     border: 0;
@@ -33,7 +33,7 @@
     color: white;
 }
 
-.user a {
+.login-container .user a {
     text-align: center;
     color: white;
 }
@@ -42,7 +42,7 @@
     margin-top: 70px;
 }
 
-.form-control{
+.login-container .form-control{
     background-color: rgba(27, 27, 27, 0.6);;
     border: 0;
     border-radius: 0 ;
@@ -52,11 +52,11 @@
     height: 40px;
 }
 
-form{
+.login-container form{
     border: 1px solid rgba(255, 255, 255, 0.3);;
     padding: 10px
 }
-.user {
+.login-container .user {
     width: 30%;
     margin: 0 auto;
     padding-top: 8%;

@@ -1,4 +1,8 @@
-.card-personale>div{
+
+#card .card-personale>div{
     margin:2px;
     padding: 2px;
 }
+
+#card {}
+

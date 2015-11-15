@@ -12,7 +12,7 @@
     <title>Create Card</title>
 </head>
 
-<body>
+<body id="card">
 <g:render template="/layouts/navbar"></g:render>
 <g:if test="${businessCard}">
     <div class="col-md-12 card-personale">
