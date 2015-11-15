@@ -26,7 +26,7 @@
                 <g:textField name="username"  type="text" class="form-control" id="" placeholder="Username" />
             </div>
             <div class="form-group">
-                <g:textField name="password"  type="password" class="form-control" id="" placeholder="Password" />
+                <g:passwordField name="password" class="form-control" id="" placeholder="Password" />
             </div>
 
             <g:submitButton name="submit" value="Entra" class="btn btn-primary"/>

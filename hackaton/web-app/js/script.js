@@ -2,14 +2,14 @@
  * Created by Gabriele on 14/11/15.
  */
 
+function slideUpHover(id) {
+    $(".bottom-hover").removeClass('slideUp');
+    document.getElementsByClassName("bottom-hover")[id].className += " slideUp";
+    $("#dashboard .card").addClass('shadow');
+};
+
 $( document ).ready(function() {
-    function slideUpHover(id) {
-        $("#"+id+" .bottom-hover").addClass('slideUp');
-        console.log("#"+id);
-        $("#dashboard .card").addClass('shadow');
-    };
     $( "#dashboard .bottom .glyphicon" ).click(function() {
-            $("#dashboard .bottom-hover").addClass('slideUp');
             $("#dashboard .card").addClass('shadow');
     });
     $( ".bottom-hover" ).click(function() {

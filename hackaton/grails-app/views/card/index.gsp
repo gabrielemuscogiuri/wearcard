@@ -19,8 +19,8 @@
         <g:link action="deleteCard" >  <i class="fa fa-trash-o" data-toggle="tooltip" data-placement="left" title="Elimina biglietto da visita"></i></g:link>
         <div class="col-md-12 box-user">
 
-            <div class="col-md-4 photo-user" style="background-image: url('${businessCard.image}')" ></div>
-            <div class="col-md-8 info-user">
+            <div class="col-md-5 photo-user" style="background-image: url('../images/avatar/${businessCard.image}');height: 33em;width: 27em;margin: 1em;" ></div>
+            <div class="col-md-7 info-user">
                 <br class="col-md-12">
                     <span class="name-user">${businessCard.name} ${businessCard.surname}</span>
                     <br>

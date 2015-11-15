@@ -32,7 +32,7 @@ class CardController {
     def deleteCard() {
         User loggedUser = User.findById(session.user.id)
         BusinessCard card = loggedUser.userCard
-        card.delete()
+        card.delete(flush: true)
         loggedUser.userCard = null
         loggedUser.save(failOnError: true, flush: true)
 

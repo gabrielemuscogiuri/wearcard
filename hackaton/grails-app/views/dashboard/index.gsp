@@ -21,7 +21,7 @@
         <hr>
     </div>
 
-    <g:each in="${handshakes}" var="handshake">
+    <g:each in="${handshakes}" var="handshake" status="i">
         <div class="col-md-4 items-card">
             <div  class="card" style="background:url('../images/avatar/${handshake.card.image}');background-size: cover">
 
@@ -32,8 +32,11 @@
                         <br>
                         <span class="ruolo">${handshake.card.role}<br> @ ${handshake.card.company}</span>
                     </div>
+
                     <div class="col-md-2 ">
-                        <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="More info" onclick="slideUpHover('${handshake.card.id}');"></span>
+                        <g:link action="addToFavourites" params="[handshake: handshake.id]">Fav</g:link>
+                        <g:link action="deleteHandshake" params="[handshake: handshake.id]">Del</g:link>
+                        <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="More info" onclick="slideUpHover('${i}');"></span>
                     </div>
                 </div>
                 <div class="bottom-hover">
@@ -70,10 +73,6 @@
     <g:if test="${handshakes.isEmpty()}">
         <p style="text-align: center;margin-top: 6em;">No Cards added yet</p>
     </g:if>
-
-    <div class="col-md-12 text-center">
-        <g:link controller="handshake" action="index">Add HandShake</g:link>
-    </div>
 
     <div class="col-md-12 text-center">
         <div class="" id="showall">Carica altri contatti</div>
@@ -127,8 +126,11 @@
 </div>
 
 <button class="fluid-button" data-toggle="tooltip" data-placement="left" title="Lista d'attesa utenti">
-    <i class="fa fa-plus" ></i>
+    <g:link controller="handshake" action="index">
+        <i class="fa fa-plus" ></i>
+    </g:link>
 </button>
+
 
 
 </body>

@@ -30,34 +30,9 @@
                         <span class="ruolo">${card.role}<br> @ ${card.company}</span>
                     </div>
                     <div class="col-md-2 ">
-                        <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="More info" onclick="slideUpHover('${card.id}');"></span>
-                    </div>
-                </div>
-                <div class="bottom-hover">
-                    <span class="nome">${card.name} ${card.surname}</span>
-                    <br>
-                    <span class="ruolo">${card.company} / ${card.role}</span>
-                    <hr>
-                    <div class="hover-info">
-                        <i class="fa fa-globe"></i>
-                        <label>City: </label>
-                        <span class="city">${card.address}</span>
-                        <br>
-                        <i class="fa fa-phone"></i>
-                        <label>Number: </label>
-                        <span class="number">${card.phoneNumber}</span>
-                        <br>
-                        <i class="fa fa-envelope-o"></i>
-                        <label>Email: </label>
-                        <span class="email">${card.email}</span>
-                        <br>
-                        <i class="fa fa-user"></i>
-                        <label>Bio: </label>
-                        <span class="bio">${card.bio}</span>
-                        <br>
-                        <i class="fa fa-linkedin"></i>
-                        <label>Linkedin: </label>
-                        <span class="linkedin">${card.linkedin}</span>
+                        <g:link action="addHandshake" params="[card: card.id]">
+                            <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Add"></span>
+                        </g:link>
                     </div>
                 </div>
             </div>
