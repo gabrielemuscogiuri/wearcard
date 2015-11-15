@@ -112,6 +112,10 @@
 </g:each>
 </div>
 
+<button class="fluid-button" data-toggle="tooltip" data-placement="left" title="Lista d'attesa utenti">
+    <i class="fa fa-plus" ></i>
+</button>
+
 
 </body>
 </html>
